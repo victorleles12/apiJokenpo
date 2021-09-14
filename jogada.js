@@ -20,6 +20,5 @@ let player = ''
   return player
 }
 
-
 module.exports = {resultadoJogada}
 
