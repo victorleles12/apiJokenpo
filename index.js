@@ -4,8 +4,12 @@ let  {resultadoJogada} = require('./jogada')
 let porta = 8000
 let player = resultadoJogada
 
+app.use(express.json())
+
 app.get('/getjogada', (req, res)=>{
-  res.send(player())
+  res.json({
+    JogadaCpu: player(req.body)
+  })
 })
 
 app.listen(porta, (req, res) =>{
