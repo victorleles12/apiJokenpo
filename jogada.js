@@ -37,8 +37,6 @@ let player = {
       player.resultado = 'derrota'
     }else if(jogadaDoplayer.jogada == 'pedra' && player.jogadaDoPc =='tesoura'){
       player.resultado = 'vitoria'
-    }if(jogadaDoplayer.jogada != 'pedra', 'papel', 'tesoura'){
-      player.resultado = 'jogada invalida'
     }
 
   return player
