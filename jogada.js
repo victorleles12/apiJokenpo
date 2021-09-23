@@ -19,6 +19,7 @@ let player = {
       default:
         player.jogadaDoPc = 'jogada invalida';
   }
+  
     if (jogadaDoplayer.jogada == 'papel' && player.jogadaDoPc =='papel'){
       player.resultado = 'empate'
     }else if(jogadaDoplayer.jogada == 'tesoura' && player.jogadaDoPc =='papel'){
