@@ -1,9 +1,11 @@
 const express = require('express');
 let app = express();
+const cors = require('cors')
 let  {resultadoJogada} = require('./jogada')
 let porta = 8000
 let player = resultadoJogada
 
+app.use(cors())
 app.use(express.json())
 
 app.get('/getjogada', (req, res)=>{
