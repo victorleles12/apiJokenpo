@@ -9,9 +9,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/getjogada', (req, res)=>{
-  res.json({
-    JogadaCpu: player(req.body)
-  })
+  res.send(player(req.body))
 })
 
 app.listen(porta, (req, res) =>{
