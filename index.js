@@ -2,7 +2,7 @@ const express = require('express');
 let app = express();
 const cors = require('cors')
 let  {resultadoJogada} = require('./jogada')
-let porta = process.env.PORT || 8080
+let porta = process.env.PORT || 80
 let player = resultadoJogada
 
 app.use(cors())
