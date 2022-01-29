@@ -5,6 +5,7 @@ let  {resultadoJogada} = require('./jogada')
 let porta = process.env.PORT || 80
 let player = resultadoJogada
 
+
 app.use(cors())
 app.use(express.json())
 
