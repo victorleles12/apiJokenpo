@@ -7,7 +7,7 @@ function resGame(player){
 
     const theGame = {
         pedra(player){
-            switch (pl) {
+            switch (player) {
                 case 'pedra':
                     res.bot = pc, res.player = player, res.res = 'empate'
                     break;
